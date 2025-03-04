@@ -1,7 +1,5 @@
 *** Settings ***
 Library  Browser
-
-
 *** Variables ***
 
 
