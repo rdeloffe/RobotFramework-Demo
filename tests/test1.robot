@@ -30,14 +30,44 @@ Test 4
     When I sort the list by "Note des clients"
     Then the selected sorting method is "Note des clients"
 
-Test 6
+Test 5
     When I search for "ballon"
     Then I am on the search page for "ballon"
     When I open the first product page
-    Then I am on the product page for "BALLON DE GYM RÉSISTANT - Swissball - 65 CM - Argent"
+    Then I am on the product page for "Ballon de Gymnastique Rythmique de 165 mm, rose ultra fluo"
     When I add the product to the cart
     Then the product is added to the cart successfully
     When I go to the cart
     Then the cart is displayed
     And there are "1" product(s) in the cart
-    And the product "BALLON DE GYM RÉSISTANT - Swissball - 65 CM - Argent" is in the cart
+    And the product "Ballon de Gymnastique Rythmique de 165 mm, rose ultra fluo" is in the cart
+
+Test 6 
+    When I search for "ballon"
+    Then I am on the search page for "ballon"
+    When I open the first product page
+    Then I am on the product page for "Ballon de Gymnastique Rythmique de 165 mm, rose ultra fluo"
+    When I add the product to the cart
+    Then the product is added to the cart successfully
+    And I close the popin
+    When I search for "8131781"
+    Then I am on the product page for "Tapis de sol fitness 6,5 mm - noir"
+    When I add the product to the cart
+    Then the product is added to the cart successfully
+    When I go to the cart
+    Then the cart is displayed
+    And there are "2" product(s) in the cart
+    # And the product "Ballon de Gymnastique Rythmique de 165 mm, rose ultra fluo" is in the cart
+    # And the product "Tapis de sol fitness 6,5 mm - noir" is in the cart
+
+
+
+    
+
+
+
+
+
+
+
+

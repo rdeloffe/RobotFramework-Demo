@@ -12,5 +12,8 @@ the product is added to the cart successfully
     #Get Element States    css=#popin-cross-sell [slot='title']    contains    visible
     Wait For Elements State    css=#popin-cross-sell [slot='title']    visible    10s
 
+I close the popin
+    Click    css=.ecomm-sidepanel__close-btn-icon
+
 I go to the cart
     Click  css=[data-href='/checkout/cart']
